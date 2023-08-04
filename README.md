@@ -6,7 +6,7 @@ PlayFabServerAPI and PlayFabClientAPI both support async functions too, so it's 
 # Documentation
 The difference between making an API request with the regular PlayFab SDK and the Async SDK is rather simple.
 Instead of using the callbacks/delegates, you just simply call the async function, and await it.
-```
+```cs
 var result = await PlayFabAsyncClientAPI.LoginWithCustomIDAsync(new LoginWithCustomIDRequest
 {
     CustomId = "My-Custom-Id",
@@ -15,7 +15,7 @@ var result = await PlayFabAsyncClientAPI.LoginWithCustomIDAsync(new LoginWithCus
 ```
 
 After it's done, you can get data from the result.
-```
+```cs
 if (result.IsError)
 {
     Debug.LogError("Oh no! Something went wrong when trying to login. "  + result.Error.ErrorMessage);
