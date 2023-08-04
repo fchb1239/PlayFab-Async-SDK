@@ -3,6 +3,9 @@ The PlayFab SDK, but async.
 Async functions are way easier to read and understand, and from my experience they are also more robust.
 PlayFabServerAPI and PlayFabClientAPI both support async functions too, so it's logical that it should exist for the client SDK.
 
+Therefore, I made a codegen (software that generates code) that turned the PlayFabClientAPI into PlayFabAsyncClientAPI.
+However, you still need the normal SDK installed for this to function correctly.
+
 # Documentation
 The difference between making an API request with the regular PlayFab SDK and the Async SDK is rather simple.
 Instead of using the callbacks/delegates, you just simply call the async function, and await it.
