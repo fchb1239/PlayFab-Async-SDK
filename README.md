@@ -25,6 +25,6 @@ if (result.IsError)
 }
 else
 {
-    Debug.Log("Hurray! It all went according to plan! Logged in as " + loginResult.Result.PlayFabId);
+    Debug.Log("Hurray! It all went according to plan! Logged in as " + result.Result.PlayFabId);
 }
 ```
